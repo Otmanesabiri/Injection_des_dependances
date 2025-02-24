@@ -1,0 +1,5 @@
+com\mycompany\ijection_de_dependence\IMetier.class
+com\mycompany\ijection_de_dependence\MetierImpl.class
+com\mycompany\ijection_de_dependence\DaoImpl.class
+com\mycompany\ijection_de_dependence\Presentation.class
+com\mycompany\ijection_de_dependence\IDao.class
