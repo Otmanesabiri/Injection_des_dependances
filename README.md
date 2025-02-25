@@ -1,4 +1,4 @@
-# Projet d'Injection des Dépendances
+# TP d'Injection des Dépendances
 
 ## Description du Projet
 Ce projet démontre différentes méthodes d'injection de dépendances en Java, utilisant à la fois des approches natives et le framework Spring. Il illustre quatre méthodes différentes d'injection : statique, dynamique, XML Spring, et annotations Spring.
@@ -18,48 +18,36 @@ src/main/java/com/mycompany/injection_de_dependence/
     └── Presentation.java # Point d'entrée de l'application
 ```
 
-## Diagramme de Classe
-```plantuml
-@startuml
-interface IDao {
-    + getData(): double
-}
-
-interface IMetier {
-    + calcul(): double
-}
-
-class DaoImpl {
-    + getData(): double
-}
-
-class MetierImpl {
-    - dao: IDao
-    + MetierImpl()
-    + MetierImpl(dao: IDao)
-    + setDao(dao: IDao): void
-    + calcul(): double
-}
-
-class Presentation {
-    + {static} main(args: String[]): void
-}
-
-IDao <|.. DaoImpl
-IMetier <|.. MetierImpl
-MetierImpl o-- IDao : dao
-Presentation ..> MetierImpl : uses
-Presentation ..> DaoImpl : uses
-
-note right of DaoImpl
-  @Component("dao")
-end note
-
-note right of MetierImpl
-  @Component("metier")
-  dao is @Autowired
-end note
-@enduml
+## Diagramme de Classes
+```mermaid
+classDiagram
+    IDao <|.. DaoImpl
+    IMetier <|.. MetierImpl
+    MetierImpl --> IDao
+    
+    class IDao {
+        +getData() double
+    }
+    
+    class DaoImpl {
+        +getData() double
+    }
+    
+    class IMetier {
+        +calcul() double
+    }
+    
+    class MetierImpl {
+        -dao IDao
+        +MetierImpl()
+        +MetierImpl(dao IDao)
+        +setDao(dao IDao) void
+        +calcul() double
+    }
+    
+    class Presentation {
+        +main(args String[]) void
+    }
 ```
 
 ### Composants Principaux
