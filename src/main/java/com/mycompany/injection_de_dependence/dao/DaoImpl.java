@@ -1,5 +1,4 @@
-package com.mycompany.ijection_de_dependence;
-
+package com.mycompany.injection_de_dependence.dao;
 import org.springframework.stereotype.Component;
 
 @Component("dao")

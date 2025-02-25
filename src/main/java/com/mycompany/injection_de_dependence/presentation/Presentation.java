@@ -1,4 +1,4 @@
-package com.mycompany.ijection_de_dependence;
+package com.mycompany.injection_de_dependence.presentation;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -8,6 +8,10 @@ import java.nio.file.Paths;
 import java.util.List;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.mycompany.injection_de_dependence.dao.DaoImpl;
+import com.mycompany.injection_de_dependence.dao.IDao;
+import com.mycompany.injection_de_dependence.metier.IMetier;
+import com.mycompany.injection_de_dependence.metier.MetierImpl;
 
 public class Presentation {
 
