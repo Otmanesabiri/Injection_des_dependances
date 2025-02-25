@@ -45,7 +45,7 @@ public class Presentation {
         }
 
         System.out.println("Injection par Spring Annotation");
-        try (AnnotationConfigApplicationContext context1 = new AnnotationConfigApplicationContext("com.mycompany.ijection_de_dependence")) {
+        try (AnnotationConfigApplicationContext context1 = new AnnotationConfigApplicationContext("com.mycompany.injection_de_dependence")) {
             IMetier metier3 = (IMetier) context1.getBean("metier");
             System.out.println("Resultat=" + metier3.calcul());
         }

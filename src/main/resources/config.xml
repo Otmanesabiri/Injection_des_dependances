@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                           http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <bean id="dao" class="com.mycompany.ijection_de_dependence.DaoImpl"/>
-    <bean id="metier" class="com.mycompany.ijection_de_dependence.MetierImpl">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+    <bean id="dao" class="com.mycompany.injection_de_dependence.dao.DaoImpl"/>
+    
+    <bean id="metier" class="com.mycompany.injection_de_dependence.metier.MetierImpl">
         <property name="dao" ref="dao"/>
     </bean>
+    
 </beans>

@@ -1,2 +1,2 @@
-com.mycompany.ijection_de_dependence.DaoImpl
-com.mycompany.ijection_de_dependence.MetierImpl
+com.mycompany.injection_de_dependence.dao.DaoImpl
+com.mycompany.injection_de_dependence.metier.MetierImpl
