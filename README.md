@@ -1,7 +1,7 @@
-# TP d'Injection des Dépendances
+# TP sur l'Injection des Dépendances
 
 ## Description du Projet
-Ce projet démontre différentes méthodes d'injection de dépendances en Java, utilisant à la fois des approches natives et le framework Spring. Il illustre quatre méthodes différentes d'injection : statique, dynamique, XML Spring, et annotations Spring.
+Ce TP démontre différentes méthodes d'injection de dépendances en Java, utilisant à la fois des approches natives et le framework Spring. Il illustre quatre méthodes différentes d'injection : statique, dynamique, XML Spring, et annotations Spring.
 
 ## Structure du Projet
 
